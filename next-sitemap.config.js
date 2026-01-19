@@ -6,7 +6,7 @@ module.exports = {
   changefreq: 'daily',
   priority: 1.0,
   sitemapSize: 7000,
-  generateIndexSitemap: true,
+  generateIndexSitemap: false,
   transform: async (config, path) => {
     let priority = config.priority;
     let changefreq = config.changefreq;
