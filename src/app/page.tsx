@@ -17,7 +17,7 @@ export default function Home() {
     '@type': 'WebApplication',
     'name': 'Calculator World',
     'description': 'A minimalist, powerful calculator application with scientific calculations, unit conversion, and multi-language support.',
-    'url': 'https://yourdomain.com',
+    'url': 'https://caculator-world.vercel.app',
     'applicationCategory': 'UtilitiesApplication',
     'operatingSystem': 'All',
     'browserRequirements': 'Requires JavaScript. Requires HTML5.',
@@ -37,7 +37,7 @@ export default function Home() {
     'creator': {
       '@type': 'Organization',
       'name': 'Calculator World',
-      'email': 'y_xk199@126.com'
+      'email': 'gueson1989@gmail.com'
     }
   };
 

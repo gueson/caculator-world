@@ -83,5 +83,9 @@
     "sponsored": "Sponsored",
     "ad": "Ad",
     "description": "Discover the best productivity apps for your daily needs"
+  },
+  "footer": {
+    "copyright": "© {year} Calculator World. All rights reserved.",
+    "email": "gueson1989@gmail.com"
   }
 }

@@ -40,7 +40,7 @@
 ### 3. 页面规范化
 
 #### 联系信息更新
-- ✅ 隐私政策和条款中的邮箱更新为 `y_xk199@126.com`
+- ✅ 隐私政策和条款中的邮箱更新为 `gueson1989@gmail.com`
 - ✅ 移除了业务地址占位符
 
 #### 布局优化
@@ -98,7 +98,7 @@ git commit -m "feat: complete SEO optimization and project improvements
 - Add JSON-LD structured data for homepage
 - Enhance metadata with OpenGraph, Twitter Cards, and alternate tags
 - Implement Service Worker for offline support
-- Update contact email to y_xk199@126.com
+- Update contact email to gueson1989@gmail.com
 - Configure sitemap generation
 - Optimize font loading
 - Fix TypeScript type errors"
@@ -122,8 +122,8 @@ git push -u origin main
 
 ## 部署后验证
 
-1. **检查 Sitemap**: 访问 `https://yourdomain.com/sitemap.xml`
-2. **检查 Robots**: 访问 `https://yourdomain.com/robots.txt`
+1. **检查 Sitemap**: 访问 `https://caculator-world.vercel.app/sitemap.xml`
+2. **检查 Robots**: 访问 `https://caculator-world.vercel.app/robots.txt`
 3. **检查 Service Worker**: 打开浏览器开发者工具 -> Application -> Service Workers
 4. **测试所有功能**: 计算器、单位转换器、多语言切换
 5. **验证 SEO**: 使用 Google Rich Results Test 或类似工具验证结构化数据

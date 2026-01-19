@@ -138,7 +138,7 @@ export default function TermsOfService() {
               <h2 className="text-xl font-semibold text-text-primary mb-3">13. Contact Us</h2>
               <p className="mb-4">If you have any questions about these Terms of Service, please contact us:</p>
               <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li>Email: y_xk199@126.com</li>
+                <li>Email: gueson1989@gmail.com</li>
               </ul>
             </section>
           </div>

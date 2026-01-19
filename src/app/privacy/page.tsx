@@ -99,7 +99,7 @@ export default function PrivacyPolicy() {
                 <li><strong>Right to Opt-Out:</strong> Opt-out of data collection (CCPA)</li>
               </ul>
               <p className="mb-4">
-                To exercise these rights, please contact us at: y_xk199@126.com
+                To exercise these rights, please contact us at: gueson1989@gmail.com
               </p>
             </section>
 
@@ -128,7 +128,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl font-semibold text-text-primary mb-3">11. Contact Us</h2>
               <p className="mb-4">If you have any questions or concerns about this Privacy Policy, please contact us:</p>
               <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li>Email: y_xk199@126.com</li>
+                <li>Email: gueson1989@gmail.com</li>
               </ul>
             </section>
           </div>

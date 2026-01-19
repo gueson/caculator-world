@@ -19,18 +19,6 @@ export default function Navbar() {
           </Link>
 
           <div className="flex items-center gap-4">
-            <Link
-              href="/privacy"
-              className="text-sm text-text-secondary hover:text-text-primary transition-colors"
-            >
-              {t('common').privacy}
-            </Link>
-            <Link
-              href="/terms"
-              className="text-sm text-text-secondary hover:text-text-primary transition-colors"
-            >
-              {t('common').terms}
-            </Link>
             <select
               value={language}
               onChange={(e) => setLanguage(e.target.value)}

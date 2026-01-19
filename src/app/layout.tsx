@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/ui/Navbar';
+import Footer from '@/components/ui/Footer';
 import CookieConsent from '@/components/ui/CookieConsent';
 import ServiceWorkerRegister from '@/components/ui/ServiceWorkerRegister';
 import { LanguageProvider } from '@/lib/i18n/LanguageContext';
@@ -13,11 +14,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://caculator-world.vercel.app'),
   title: 'Calculator World - Free Online Calculator & Unit Converter',
   description: 'A minimalist, powerful calculator app with scientific calculations, unit conversion, and multi-language support. Free to use for everyone.',
   keywords: 'calculator, unit converter, scientific calculator, online calculator, free calculator, math calculator, conversion tool',
-  authors: [{ name: 'Calculator World', url: 'https://yourdomain.com' }],
+  authors: [{ name: 'Calculator World', url: 'https://caculator-world.vercel.app' }],
   creator: 'Calculator World',
   publisher: 'Calculator World',
   alternates: {
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Calculator World - Free Online Calculator & Unit Converter',
     description: 'A minimalist, powerful calculator app with scientific calculations, unit conversion, and multi-language support.',
     type: 'website',
-    url: 'https://yourdomain.com',
+    url: 'https://caculator-world.vercel.app',
     siteName: 'Calculator World',
     locale: 'en_US',
     images: [
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'google-site-verification-token',
+    google: 'dSvyi8ugxh5gSyQK40vW2UI6EG_luAKTEf3793gGE6c',
   },
 };
 
@@ -90,6 +91,7 @@ export default function RootLayout({
           <ServiceWorkerRegister />
           <Navbar />
           {children}
+          <Footer />
           <CookieConsent />
         </LanguageProvider>
       </body>
