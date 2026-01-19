@@ -1,0 +1,87 @@
+{
+  "common": {
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "accept": "Accepter",
+    "reject": "Refuser"
+  },
+  "navbar": {
+    "title": "Calculator World"
+  },
+  "home": {
+    "calculator": "Calculatrice",
+    "unitConverter": "Convertisseur d&apos;Unités"
+  },
+  "calculator": {
+    "title": "Calculatrice",
+    "scientific": "Scientifique",
+    "history": "Historique",
+    "noHistory": "Aucun historique",
+    "clear": "Effacer",
+    "result": "Résultat"
+  },
+  "converter": {
+    "title": "Convertisseur d&apos;Unités",
+    "category": "Catégorie",
+    "value": "Valeur",
+    "enterValue": "Entrer la valeur",
+    "from": "De",
+    "to": "À",
+    "result": "Résultat",
+    "categories": {
+      "length": "Longueur",
+      "weight": "Poids",
+      "temperature": "Température",
+      "area": "Surface",
+      "volume": "Volume"
+    },
+    "units": {
+      "length": {
+        "meters": "Mètres (m)",
+        "kilometers": "Kilomètres (km)",
+        "centimeters": "Centimètres (cm)",
+        "millimeters": "Millimètres (mm)",
+        "miles": "Milles (mi)",
+        "yards": "Yards (yd)",
+        "feet": "Pieds (ft)",
+        "inches": "Pouces (in)"
+      },
+      "weight": {
+        "kilograms": "Kilogrammes (kg)",
+        "grams": "Grammes (g)",
+        "milligrams": "Milligrammes (mg)",
+        "pounds": "Livres (lb)",
+        "ounces": "Onces (oz)"
+      },
+      "temperature": {
+        "celsius": "Celsius (°C)",
+        "fahrenheit": "Fahrenheit (°F)",
+        "kelvin": "Kelvin (K)"
+      },
+      "area": {
+        "squareMeters": "Mètres Carrés (m²)",
+        "squareKilometers": "Kilomètres Carrés (km²)",
+        "squareFeet": "Pieds Carrés (ft²)",
+        "acres": "Acres",
+        "hectares": "Hectares"
+      },
+      "volume": {
+        "liters": "Litres (L)",
+        "milliliters": "Millilitres (mL)",
+        "cubicMeters": "Mètres Cubes (m³)",
+        "gallonsUs": "Gallons (US)",
+        "gallonsUk": "Gallons (UK)",
+        "fluidOunces": "Onces Liquides (US)"
+      }
+    }
+  },
+  "cookieConsent": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience et diffuser des publicités personnalisées. En continuant à utiliser notre site, vous acceptez notre",
+    "privacyPolicy": "Politique de Confidentialité"
+  },
+  "ads": {
+    "sponsored": "Sponsorisé",
+    "ad": "Annonce",
+    "description": "Découvrez les meilleures applications de productivité pour vos besoins quotidiens"
+  }
+}

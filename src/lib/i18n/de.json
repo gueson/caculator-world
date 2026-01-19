@@ -1,0 +1,87 @@
+{
+  "common": {
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen"
+  },
+  "navbar": {
+    "title": "Calculator World"
+  },
+  "home": {
+    "calculator": "Taschenrechner",
+    "unitConverter": "Einheitenumrechner"
+  },
+  "calculator": {
+    "title": "Taschenrechner",
+    "scientific": "Wissenschaftlich",
+    "history": "Verlauf",
+    "noHistory": "Noch kein Verlauf",
+    "clear": "Löschen",
+    "result": "Ergebnis"
+  },
+  "converter": {
+    "title": "Einheitenumrechner",
+    "category": "Kategorie",
+    "value": "Wert",
+    "enterValue": "Wert eingeben",
+    "from": "Von",
+    "to": "Nach",
+    "result": "Ergebnis",
+    "categories": {
+      "length": "Länge",
+      "weight": "Gewicht",
+      "temperature": "Temperatur",
+      "area": "Fläche",
+      "volume": "Volumen"
+    },
+    "units": {
+      "length": {
+        "meters": "Meter (m)",
+        "kilometers": "Kilometer (km)",
+        "centimeters": "Zentimeter (cm)",
+        "millimeters": "Millimeter (mm)",
+        "miles": "Meilen (mi)",
+        "yards": "Yard (yd)",
+        "feet": "Fuß (ft)",
+        "inches": "Zoll (in)"
+      },
+      "weight": {
+        "kilograms": "Kilogramm (kg)",
+        "grams": "Gramm (g)",
+        "milligrams": "Milligramm (mg)",
+        "pounds": "Pfund (lb)",
+        "ounces": "Unzen (oz)"
+      },
+      "temperature": {
+        "celsius": "Celsius (°C)",
+        "fahrenheit": "Fahrenheit (°F)",
+        "kelvin": "Kelvin (K)"
+      },
+      "area": {
+        "squareMeters": "Quadratmeter (m²)",
+        "squareKilometers": "Quadratkilometer (km²)",
+        "squareFeet": "Quadratfuß (ft²)",
+        "acres": "Acres",
+        "hectares": "Hektar"
+      },
+      "volume": {
+        "liters": "Liter (L)",
+        "milliliters": "Milliliter (mL)",
+        "cubicMeters": "Kubikmeter (m³)",
+        "gallonsUs": "Gallonen (US)",
+        "gallonsUk": "Gallonen (UK)",
+        "fluidOunces": "Flüssigunzen (US)"
+      }
+    }
+  },
+  "cookieConsent": {
+    "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und personalisierte Anzeigen zu schalten. Durch die weitere Nutzung unserer Website stimmen Sie unserer",
+    "privacyPolicy": "Datenschutzrichtlinie"
+  },
+  "ads": {
+    "sponsored": "Gesponsert",
+    "ad": "Anzeige",
+    "description": "Entdecken Sie die besten Produktivitäts-Apps für Ihre täglichen Bedürfnisse"
+  }
+}

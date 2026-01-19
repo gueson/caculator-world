@@ -1,0 +1,87 @@
+{
+  "common": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  },
+  "navbar": {
+    "title": "Calculator World"
+  },
+  "home": {
+    "calculator": "Calculadora",
+    "unitConverter": "Convertidor de Unidades"
+  },
+  "calculator": {
+    "title": "Calculadora",
+    "scientific": "Científica",
+    "history": "Historial",
+    "noHistory": "Aún no hay historial",
+    "clear": "Borrar",
+    "result": "Resultado"
+  },
+  "converter": {
+    "title": "Convertidor de Unidades",
+    "category": "Categoría",
+    "value": "Valor",
+    "enterValue": "Introducir valor",
+    "from": "De",
+    "to": "A",
+    "result": "Resultado",
+    "categories": {
+      "length": "Longitud",
+      "weight": "Peso",
+      "temperature": "Temperatura",
+      "area": "Área",
+      "volume": "Volumen"
+    },
+    "units": {
+      "length": {
+        "meters": "Metros (m)",
+        "kilometers": "Kilómetros (km)",
+        "centimeters": "Centímetros (cm)",
+        "millimeters": "Milímetros (mm)",
+        "miles": "Millas (mi)",
+        "yards": "Yardas (yd)",
+        "feet": "Pies (ft)",
+        "inches": "Pulgadas (in)"
+      },
+      "weight": {
+        "kilograms": "Kilogramos (kg)",
+        "grams": "Gramos (g)",
+        "milligrams": "Miligramos (mg)",
+        "pounds": "Libras (lb)",
+        "ounces": "Onzas (oz)"
+      },
+      "temperature": {
+        "celsius": "Celsius (°C)",
+        "fahrenheit": "Fahrenheit (°F)",
+        "kelvin": "Kelvin (K)"
+      },
+      "area": {
+        "squareMeters": "Metros Cuadrados (m²)",
+        "squareKilometers": "Kilómetros Cuadrados (km²)",
+        "squareFeet": "Pies Cuadrados (ft²)",
+        "acres": "Acres",
+        "hectares": "Hectáreas"
+      },
+      "volume": {
+        "liters": "Litros (L)",
+        "milliliters": "Mililitros (mL)",
+        "cubicMeters": "Metros Cúbicos (m³)",
+        "gallonsUs": "Galones (US)",
+        "gallonsUk": "Galones (UK)",
+        "fluidOunces": "Onzas Líquidas (US)"
+      }
+    }
+  },
+  "cookieConsent": {
+    "message": "Utilizamos cookies para mejorar su experiencia y servir anuncios personalizados. Al continuar utilizando nuestro sitio, acepta nuestra",
+    "privacyPolicy": "Política de Privacidad"
+  },
+  "ads": {
+    "sponsored": "Patrocinado",
+    "ad": "Anuncio",
+    "description": "Descubre las mejores aplicaciones de productividad para tus necesidades diarias"
+  }
+}

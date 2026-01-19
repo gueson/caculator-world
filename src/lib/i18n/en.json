@@ -1,0 +1,87 @@
+{
+  "common": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "navbar": {
+    "title": "Calculator World"
+  },
+  "home": {
+    "calculator": "Calculator",
+    "unitConverter": "Unit Converter"
+  },
+  "calculator": {
+    "title": "Calculator",
+    "scientific": "Scientific",
+    "history": "History",
+    "noHistory": "No history yet",
+    "clear": "Clear",
+    "result": "Result"
+  },
+  "converter": {
+    "title": "Unit Converter",
+    "category": "Category",
+    "value": "Value",
+    "enterValue": "Enter value",
+    "from": "From",
+    "to": "To",
+    "result": "Result",
+    "categories": {
+      "length": "Length",
+      "weight": "Weight",
+      "temperature": "Temperature",
+      "area": "Area",
+      "volume": "Volume"
+    },
+    "units": {
+      "length": {
+        "meters": "Meters (m)",
+        "kilometers": "Kilometers (km)",
+        "centimeters": "Centimeters (cm)",
+        "millimeters": "Millimeters (mm)",
+        "miles": "Miles (mi)",
+        "yards": "Yards (yd)",
+        "feet": "Feet (ft)",
+        "inches": "Inches (in)"
+      },
+      "weight": {
+        "kilograms": "Kilograms (kg)",
+        "grams": "Grams (g)",
+        "milligrams": "Milligrams (mg)",
+        "pounds": "Pounds (lb)",
+        "ounces": "Ounces (oz)"
+      },
+      "temperature": {
+        "celsius": "Celsius (°C)",
+        "fahrenheit": "Fahrenheit (°F)",
+        "kelvin": "Kelvin (K)"
+      },
+      "area": {
+        "squareMeters": "Square Meters (m²)",
+        "squareKilometers": "Square Kilometers (km²)",
+        "squareFeet": "Square Feet (ft²)",
+        "acres": "Acres",
+        "hectares": "Hectares"
+      },
+      "volume": {
+        "liters": "Liters (L)",
+        "milliliters": "Milliliters (mL)",
+        "cubicMeters": "Cubic Meters (m³)",
+        "gallonsUs": "Gallons (US)",
+        "gallonsUk": "Gallons (UK)",
+        "fluidOunces": "Fluid Ounces (US)"
+      }
+    }
+  },
+  "cookieConsent": {
+    "message": "We use cookies to enhance your experience and serve personalized ads. By continuing to use our site, you agree to our",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "ads": {
+    "sponsored": "Sponsored",
+    "ad": "Ad",
+    "description": "Discover the best productivity apps for your daily needs"
+  }
+}
