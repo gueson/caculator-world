@@ -17,7 +17,7 @@ export default function Home() {
     '@type': 'WebApplication',
     'name': 'Calculator World',
     'description': 'A minimalist, powerful calculator application with scientific calculations, unit conversion, and multi-language support.',
-    'url': 'https://caculator-world.vercel.app',
+    'url': 'https://www.caculator-world.online',
     'applicationCategory': 'UtilitiesApplication',
     'operatingSystem': 'All',
     'browserRequirements': 'Requires JavaScript. Requires HTML5.',

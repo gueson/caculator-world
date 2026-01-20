@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import Navbar from '@/components/ui/Navbar';
@@ -15,11 +16,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://caculator-world.vercel.app'),
+  metadataBase: new URL('https://www.caculator-world.online'),
   title: 'Calculator World - Free Online Calculator & Unit Converter',
   description: 'A minimalist, powerful calculator app with scientific calculations, unit conversion, and multi-language support. Free to use for everyone.',
   keywords: 'calculator, unit converter, scientific calculator, online calculator, free calculator, math calculator, conversion tool',
-  authors: [{ name: 'Calculator World', url: 'https://caculator-world.vercel.app' }],
+  authors: [{ name: 'Calculator World', url: 'https://www.caculator-world.online' }],
   creator: 'Calculator World',
   publisher: 'Calculator World',
   alternates: {
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     title: 'Calculator World - Free Online Calculator & Unit Converter',
     description: 'A minimalist, powerful calculator app with scientific calculations, unit conversion, and multi-language support.',
     type: 'website',
-    url: 'https://caculator-world.vercel.app',
+    url: 'https://www.caculator-world.online',
     siteName: 'Calculator World',
     locale: 'en_US',
     images: [
@@ -86,8 +87,18 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#5B9BD5" />
+        {/* Google tag (gtag.js) */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1VV0PH91M0" />
       </head>
       <body className={inter.className}>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-1VV0PH91M0');
+          `}
+        </Script>
         <LanguageProvider>
           <ServiceWorkerRegister />
           <Navbar />

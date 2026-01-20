@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://caculator-world.vercel.app',
+  siteUrl: 'https://www.caculator-world.online',
   generateRobotsTxt: true,
   outDir: 'public',
   changefreq: 'daily',
