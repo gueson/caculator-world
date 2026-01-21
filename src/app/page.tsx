@@ -1,6 +1,5 @@
 'use client';
 
-import AdBanner from '@/components/ads/AdBanner';
 import Calculator from '@/components/calculator/Calculator';
 import UnitConverter from '@/components/converter/UnitConverter';
 import { useState } from 'react';
@@ -48,7 +47,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <AdBanner position="top" />
 
       <div className="flex-1 container mx-auto px-4 py-8">
         <div className="mb-6">
@@ -78,8 +76,6 @@ export default function Home() {
 
         {activeTab === 'calculator' ? <Calculator /> : <UnitConverter />}
       </div>
-
-      <AdBanner position="bottom" />
     </main>
   );
 }

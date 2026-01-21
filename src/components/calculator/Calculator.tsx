@@ -6,7 +6,6 @@ import CalculatorDisplay from './CalculatorDisplay';
 import CalculatorKeypad from './CalculatorKeypad';
 import ScientificPanel from './ScientificPanel';
 import HistoryPanel from './HistoryPanel';
-import NativeAd from '../ads/NativeAd';
 
 export default function Calculator() {
   const [expression, setExpression] = useState('');
@@ -191,9 +190,7 @@ const parseTrigFunctions = (expr: string): string => {
             <CalculatorKeypad onInput={handleInput} />
           </div>
 
-          <div className="mt-4">
-            <NativeAd />
-          </div>
+          
         </div>
 
         {showHistory && (

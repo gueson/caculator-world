@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import AdBanner from '@/components/ads/AdBanner';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - Calculator World',
@@ -9,8 +8,6 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen flex flex-col">
-      <AdBanner position="top" />
-
       <div className="flex-1 container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-text-primary mb-6">Privacy Policy</h1>
@@ -134,8 +131,6 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </div>
-
-      <AdBanner position="bottom" />
     </main>
   );
 }
