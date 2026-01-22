@@ -23,8 +23,19 @@ export const metadata: Metadata = {
   authors: [{ name: 'Calculator World', url: 'https://www.caculator-world.online' }],
   creator: 'Calculator World',
   publisher: 'Calculator World',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/icon-192.png',
+    other: {
+      rel: 'icon',
+      url: '/icon-192.png',
+      sizes: '192x192',
+      type: 'image/png',
+    },
+  },
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.caculator-world.online',
     languages: {
       'en': '/',
       'es': '/',
