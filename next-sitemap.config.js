@@ -7,6 +7,47 @@ module.exports = {
   priority: 1.0,
   sitemapSize: 7000,
   generateIndexSitemap: false,
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+      // 禁止 AI 训练和垃圾爬虫（核心优化）
+      {
+        userAgent: 'GPTBot',
+        disallow: '/',
+      },
+      {
+        userAgent: 'Applebot-Extended',
+        disallow: '/',
+      },
+      {
+        userAgent: 'ClaudeBot',
+        disallow: '/',
+      },
+      {
+        userAgent: 'Google-Extended',
+        disallow: '/',
+      },
+      {
+        userAgent: 'Amazonbot',
+        disallow: '/',
+      },
+      {
+        userAgent: 'Bytespider',
+        disallow: '/',
+      },
+      {
+        userAgent: 'CCBot',
+        disallow: '/',
+      },
+      {
+        userAgent: 'meta-externalagent',
+        disallow: '/',
+      },
+    ],
+  },
   transform: async (config, path) => {
     let priority = config.priority;
     let changefreq = config.changefreq;
