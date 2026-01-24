@@ -9,10 +9,6 @@ module.exports = {
   generateIndexSitemap: false,
   robotsTxtOptions: {
     policies: [
-      {
-        userAgent: '*',
-        allow: '/',
-      },
       // 禁止 AI 训练和垃圾爬虫（核心优化）
       {
         userAgent: 'GPTBot',
@@ -45,6 +41,10 @@ module.exports = {
       {
         userAgent: 'meta-externalagent',
         disallow: '/',
+      },
+      {
+        userAgent: '*',
+        allow: '/',
       },
     ],
   },
