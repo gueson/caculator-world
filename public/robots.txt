@@ -1,35 +1,3 @@
-# GPTBot
-User-agent: GPTBot
-Disallow: /
-
-# Applebot-Extended
-User-agent: Applebot-Extended
-Disallow: /
-
-# ClaudeBot
-User-agent: ClaudeBot
-Disallow: /
-
-# Google-Extended
-User-agent: Google-Extended
-Disallow: /
-
-# Amazonbot
-User-agent: Amazonbot
-Disallow: /
-
-# Bytespider
-User-agent: Bytespider
-Disallow: /
-
-# CCBot
-User-agent: CCBot
-Disallow: /
-
-# meta-externalagent
-User-agent: meta-externalagent
-Disallow: /
-
 # *
 User-agent: *
 Allow: /
