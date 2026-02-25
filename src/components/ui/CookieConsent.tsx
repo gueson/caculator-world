@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useTranslation } from '@/lib/i18n/LanguageContext';
 
 export default function CookieConsent() {
@@ -37,9 +38,9 @@ export default function CookieConsent() {
           <div className="flex-1">
             <p className="text-sm text-text-secondary">
               {cookieText.message}{' '}
-              <a href="/privacy" className="text-primary hover:underline">
+              <Link href="/privacy" className="text-primary hover:underline">
                 {cookieText.privacyPolicy}
-              </a>.
+              </Link>.
             </p>
           </div>
           <div className="flex gap-3">
