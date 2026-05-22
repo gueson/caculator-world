@@ -13,7 +13,7 @@ import { languages } from '@/lib/i18n';
 const inter = Inter({ 
   subsets: ['latin'],
   display: 'swap',
-  preload: true,
+  preload: false,
 });
 
 interface Props {
@@ -35,8 +35,8 @@ export function generateMetadata({ params }: { params: { lang: string } }) {
   return {
     metadataBase: new URL('https://www.caculator-world.online'),
     title: `Calculator World - Free Online Calculator & Unit Converter in ${langNames[currentLang]}`,
-    description: `Powerful ${langNames[currentLang]} calculator with scientific functions, unit conversion, and multi-language support. Free, easy-to-use, and accurate for students, professionals, and everyday use.`,
-    keywords: `calculator, unit converter, scientific calculator, online calculator, free calculator, math calculator, conversion tool, ${currentLang} calculator`,
+    description: `Powerful ${langNames[currentLang]} calculator with scientific functions, unit conversion, and multi-language support. Free, easy-to-use and accurate, professionals, and everyday use.`,
+    keywords: `free calculator, unit converter, scientific and math calculator, conversion tool, ${currentLang} calculator`,
     authors: [{ name: 'Calculator World', url: 'https://www.caculator-world.online' }],
     creator: 'Calculator World',
     publisher: 'Calculator World',
