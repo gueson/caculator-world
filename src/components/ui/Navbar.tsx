@@ -15,9 +15,9 @@ export default function Navbar() {
     setLanguage(newLang);
     
     // Navigate to the new language version
-    if (pathname.startsWith('/en') || pathname.startsWith('/es') || pathname.startsWith('/fr') || pathname.startsWith('/de')) {
+    if (pathname.startsWith('/en') || pathname.startsWith('/es') || pathname.startsWith('/fr') || pathname.startsWith('/de') || pathname.startsWith('/zh')) {
       // Replace the language part in the URL
-      const newPathname = pathname.replace(/^\/(en|es|fr|de)/, `/${newLang}`);
+      const newPathname = pathname.replace(/^\/(en|es|fr|de|zh)/, `/${newLang}`);
       router.push(newPathname);
     } else {
       // If on root, redirect to the new language version

@@ -1,41 +1,28 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
-import '../globals.css';
 import Navbar from '@/components/ui/Navbar';
 import Footer from '@/components/ui/Footer';
 import CookieConsent from '@/components/ui/CookieConsent';
-import ServiceWorkerRegister from '@/components/ui/ServiceWorkerRegister';
 import { LanguageProvider } from '@/lib/i18n/LanguageContext';
 import { languages } from '@/lib/i18n';
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  display: 'swap',
-  preload: false,
-});
+const langNames: Record<string, string> = {
+  en: 'English',
+  es: 'Español',
+  fr: 'Français',
+  de: 'Deutsch',
+  zh: '中文'
+};
 
-interface Props {
-  children: React.ReactNode;
-  params: {
-    lang: string;
-  };
-}
-
-export function generateMetadata({ params }: { params: { lang: string } }) {
-  const currentLang = params.lang || 'en';
-  const langNames: Record<string, string> = {
-    en: 'English',
-    es: 'Español',
-    fr: 'Français',
-    de: 'Deutsch'
-  };
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  const currentLang = lang || 'en';
 
   return {
     metadataBase: new URL('https://www.caculator-world.online'),
     title: `Calculator World - Free Online Calculator & Unit Converter in ${langNames[currentLang]}`,
-    description: `Powerful ${langNames[currentLang]} calculator with scientific functions, unit conversion, and multi-language support. Free, easy-to-use and accurate, professionals, and everyday use.`,
+    description: `Powerful ${langNames[currentLang]} calculator with scientific functions, unit conversion, and multi-language support. Free, easy-to-use and accurate for students, professionals, and everyday use.`,
     keywords: `free calculator, unit converter, scientific and math calculator, conversion tool, ${currentLang} calculator`,
     authors: [{ name: 'Calculator World', url: 'https://www.caculator-world.online' }],
     creator: 'Calculator World',
@@ -47,6 +34,7 @@ export function generateMetadata({ params }: { params: { lang: string } }) {
         'es': '/es',
         'fr': '/fr',
         'de': '/de',
+        'zh': '/zh',
       },
     },
     openGraph: {
@@ -89,57 +77,24 @@ export function generateMetadata({ params }: { params: { lang: string } }) {
   };
 }
 
-export const viewport = {
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 5,
-};
-
-export default function LanguageLayout({ children, params }: { children: React.ReactNode; params: Promise<{ lang: string }> | { lang: string } }) {
-  const currentLang = (typeof params === 'object' && 'lang' in params) ? params.lang : 'en';
-
+export default function LanguageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={currentLang}>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="theme-color" content="#5B9BD5" />
-        {/* Hreflang tags for SEO */}
-        {languages.map(lang => (
-          <link
-            key={lang.code}
-            rel="alternate"
-            hrefLang={lang.code}
-            href={`https://www.caculator-world.online/${lang.code}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://www.caculator-world.online/en"
-        />
-        {/* Google tag (gtag.js) */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1VV0PH91M0" />
-      </head>
-      <body className={inter.className}>
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1VV0PH91M0', {
-              page_path: '/${currentLang}'
-            });
-          `}
-        </Script>
-        <LanguageProvider>
-          <ServiceWorkerRegister />
-          <Navbar />
-          {children}
-          <Footer />
-          <CookieConsent />
-        </LanguageProvider>
-        <Analytics />
-      </body>
-    </html>
+    <LanguageProvider>
+      <Navbar />
+      {children}
+      <Footer />
+      <CookieConsent />
+      <Analytics />
+      {/* Google tag (gtag.js) */}
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1VV0PH91M0" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1VV0PH91M0');
+        `}
+      </Script>
+    </LanguageProvider>
   );
 }

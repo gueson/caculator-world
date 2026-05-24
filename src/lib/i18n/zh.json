@@ -1,0 +1,91 @@
+{
+  "common": {
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "accept": "接受",
+    "reject": "拒绝"
+  },
+  "navbar": {
+    "title": "计算器世界"
+  },
+  "home": {
+    "calculator": "计算器",
+    "unitConverter": "单位转换器"
+  },
+  "calculator": {
+    "title": "计算器",
+    "scientific": "科学计算",
+    "history": "历史记录",
+    "noHistory": "暂无历史记录",
+    "clear": "清除",
+    "result": "结果"
+  },
+  "converter": {
+    "title": "单位转换器",
+    "category": "类别",
+    "value": "数值",
+    "enterValue": "输入数值",
+    "from": "从",
+    "to": "到",
+    "result": "结果",
+    "categories": {
+      "length": "长度",
+      "weight": "重量",
+      "temperature": "温度",
+      "area": "面积",
+      "volume": "体积"
+    },
+    "units": {
+      "length": {
+        "meters": "米 (m)",
+        "kilometers": "千米 (km)",
+        "centimeters": "厘米 (cm)",
+        "millimeters": "毫米 (mm)",
+        "miles": "英里 (mi)",
+        "yards": "码 (yd)",
+        "feet": "英尺 (ft)",
+        "inches": "英寸 (in)"
+      },
+      "weight": {
+        "kilograms": "千克 (kg)",
+        "grams": "克 (g)",
+        "milligrams": "毫克 (mg)",
+        "pounds": "磅 (lb)",
+        "ounces": "盎司 (oz)"
+      },
+      "temperature": {
+        "celsius": "摄氏度 (°C)",
+        "fahrenheit": "华氏度 (°F)",
+        "kelvin": "开尔文 (K)"
+      },
+      "area": {
+        "squareMeters": "平方米 (m²)",
+        "squareKilometers": "平方千米 (km²)",
+        "squareFeet": "平方英尺 (ft²)",
+        "acres": "英亩",
+        "hectares": "公顷"
+      },
+      "volume": {
+        "liters": "升 (L)",
+        "milliliters": "毫升 (mL)",
+        "cubicMeters": "立方米 (m³)",
+        "gallonsUs": "加仑（美制）",
+        "gallonsUk": "加仑（英制）",
+        "fluidOunces": "液盎司（美制）"
+      }
+    }
+  },
+  "cookieConsent": {
+    "message": "我们使用 cookies 来提升您的体验并提供个性化广告。继续使用我们的网站即表示您同意我们的",
+    "privacyPolicy": "隐私政策"
+  },
+  "ads": {
+    "sponsored": "赞助",
+    "ad": "广告",
+    "description": "发现最适合您日常需求的 productivity 应用程序"
+  },
+  "footer": {
+    "copyright": "© {year} 计算器世界。保留所有权利。",
+    "email": "support@caculator-world.online"
+  }
+}

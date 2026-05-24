@@ -72,7 +72,7 @@ module.exports = {
   },
   additionalPaths: async (config) => {
     const result = [];
-    const languages = ['en', 'es', 'fr', 'de'];
+    const languages = ['en', 'es', 'fr', 'de', 'zh'];
     
     languages.forEach((lang) => {
       result.push({
