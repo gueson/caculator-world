@@ -14,6 +14,15 @@ const nextConfig = {
     optimizeCss: true,
     scrollRestoration: true
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/en',
+        permanent: true, // 301永久重定向
+      },
+    ];
+  },
   async headers() {
     return [
       {
@@ -40,12 +49,17 @@ const nextConfig = {
             value: '1; mode=block'
           },
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable'
-          },
-          {
             key: 'Access-Control-Allow-Origin',
             value: 'https://www.caculator-world.online'
+          }
+        ]
+      },
+      {
+        source: '/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
           }
         ]
       }
